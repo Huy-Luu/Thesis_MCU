@@ -17,8 +17,17 @@ extern TIM_HandleTypeDef htim1;
 extern UART_HandleTypeDef huart2;
 extern UART_HandleTypeDef huart1;
 
+//test functions
+int testVariable(void);
+
+//variable externs
+extern float kp, ki, kd;
+
 //function externs
 extern void changeUART2Baud();
+
+//PID
+float PID_calc(float repeated_time, float desired_speed, float actual_speed);
 
 //Magnetometer
 void compassWrite(uint8_t data, uint8_t size);
@@ -27,14 +36,13 @@ void readAxis(uint8_t compassData[6]);
 float convert(int16_t *x_axis, int16_t *y_axis, int16_t *z_axis, uint8_t compassData[6]);
 
 //GPS
-void disableAllSentence();
-void enableGPGLL();
+void GPS_Init(void);
+void disableAllSentence(void);
+void enableGPGLL(void);
 void setSentence(char NMEA_num, uint8_t enable);
-void changeBaudrate();
-void changeRate();
+void changeBaudrate(void);
+void changeRate(void);
 void insertChecksum(uint8_t packet[], const uint8_t len);
-
-
 
 
 #endif

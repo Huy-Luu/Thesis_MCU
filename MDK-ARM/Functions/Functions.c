@@ -1,8 +1,13 @@
 #include "Functions.h"
 #include "string.h"
 
+//test
+uint8_t test;
+
+//PID variables
+float error, desired_speed, actual_speed, integratal, integratal_pre, derivative, error_pre, error_pre_pre, output, pre_out; 
+
 //GPS variables
-// GPS
 uint8_t config_msg[50] ={0};
 
 #define NMEA_LEN 16
@@ -92,6 +97,32 @@ uint8_t updateFreq[FREQ_LEN] = {
   0x12, // CK_B
  };
 
+//***********PID
+
+float PID_calc(float repeated_time, float desired_speed, float actual_speed)
+{
+
+error = desired_speed-actual_speed;
+
+integratal = (error_pre + error)*repeated_time;
+	
+derivative = error - 2*error_pre + error_pre_pre;
+
+output = pre_out + kp*(error-error_pre) + 0.5*ki*integratal + (kd/repeated_time)*derivative;
+	
+integratal_pre = integratal;
+error_pre=error;
+	error_pre_pre=error_pre;
+pre_out=output;
+	
+return output;
+}
+int testVariable(void)
+{
+	test++;
+	return test;
+}
+
 //***********Magnetometer
 void compassWrite(uint8_t data, uint8_t size)
 {
@@ -134,7 +165,7 @@ float convert(int16_t *x_axis, int16_t *y_axis, int16_t *z_axis, uint8_t compass
 
 //-------------------------------
 //***********GPS
-void GPS_Init()
+void GPS_Init(void)
 {
 	disableAllSentence();
 	HAL_Delay(100);
@@ -154,7 +185,7 @@ void GPS_Init()
 	HAL_Delay(100);
 }
 
-void disableAllSentence()
+void disableAllSentence(void)
 {
 	setSentence(GPGGA, false);
 	setSentence(GPGLL, false);
@@ -164,7 +195,7 @@ void disableAllSentence()
 	setSentence(GPVTG, false);
 }
 
-void enableGPGLL()
+void enableGPGLL(void)
 {
 		setSentence(GPGLL, true);
 }
@@ -185,12 +216,12 @@ void setSentence(char NMEA_num, uint8_t enable)
 	HAL_UART_Transmit(&huart2, configPacket, NMEA_LEN,100);
 }
 
-void changeBaudrate()
+void changeBaudrate(void)
 {
 	HAL_UART_Transmit(&huart2, Baud, BAUD_LEN,100);
 }
 
-void changeRate()
+void changeRate(void)
 {
 	HAL_UART_Transmit(&huart2, updateFreq, FREQ_LEN,100);
 }
