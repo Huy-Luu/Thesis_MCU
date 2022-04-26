@@ -26,8 +26,12 @@ extern float kp, ki, kd;
 //function externs
 extern void changeUART2Baud();
 
+//setSpeed
+void setSpeed(float *speed, int choose);
+
 //PID
 float PID_calc(float repeated_time, float desired_speed, float actual_speed);
+void resetParameters(void);
 
 //Magnetometer
 void compassWrite(uint8_t data, uint8_t size);

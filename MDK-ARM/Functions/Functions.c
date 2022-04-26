@@ -15,6 +15,12 @@ uint8_t config_msg[50] ={0};
 #define FREQ_LEN 14
 #define false 0
 #define true 1
+	
+#define speed1 48	//0: 3.0
+#define speed2 49 //1: 3.5
+#define speed3 50 //2: 4.0
+#define speed4 51 //3: 4.5
+#define speed5 52 //4: 4.8
 
 const uint8_t GPGGA = 0;
 const uint8_t GPGLL = 1;
@@ -97,6 +103,33 @@ uint8_t updateFreq[FREQ_LEN] = {
   0x12, // CK_B
  };
 
+//***********setspeed
+void setSpeed(float *speed, int choose)
+{
+	switch(choose)
+	{
+		case speed1:
+			*speed = 3.0;
+		break;
+		
+		case speed2:
+			*speed = 3.5;
+		break;
+		
+		case speed3:
+			*speed = 4.0;
+		break;
+		
+		case speed4:
+			*speed = 4.5;
+		break;
+		
+		case speed5:
+			*speed = 4.8;
+		break;
+	}
+}
+
 //***********PID
 
 float PID_calc(float repeated_time, float desired_speed, float actual_speed)
@@ -117,6 +150,15 @@ pre_out=output;
 	
 return output;
 }
+
+void resetParameters(void)
+{
+	error = error_pre = error_pre_pre = 0;
+	derivative = 0;
+	integratal = integratal_pre = 0;
+	pre_out = 0;
+}
+
 int testVariable(void)
 {
 	test++;
@@ -136,7 +178,7 @@ void compassInit()
 		write_data=0x01;
 		HAL_I2C_Mem_Write(&hi2c1, compass, 0x0B, 1, &write_data, 1,100);
 	
-		write_data=0x01;
+		write_data=0x01; // or 1D
 		HAL_I2C_Mem_Write(&hi2c1, compass, 0x09, 1, &write_data, 1,100); // write 0s to pwr_mng_reg	
 
 }

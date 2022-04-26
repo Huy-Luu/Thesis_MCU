@@ -31,3 +31,6 @@ gps_cart\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
 gps_cart\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 gps_cart\main.o: .\Functions\Functions.h
 gps_cart\main.o: D:\Keil V5\ARM\ARMCC\Bin\..\include\math.h
+gps_cart\main.o: D:\Keil V5\ARM\ARMCC\Bin\..\include\stdlib.h
+gps_cart\main.o: D:\Keil V5\ARM\ARMCC\Bin\..\include\stdio.h
+gps_cart\main.o: D:\Keil V5\ARM\ARMCC\Bin\..\include\string.h
