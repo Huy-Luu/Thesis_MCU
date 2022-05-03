@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=MCU_TX-GPS_RX Pin=P4-2
+Removed Pin From Net: NetName=GND Pin=P4-4
+Added Pin To Net: NetName=GND Pin=P4-2
+Added Pin To Net: NetName=MCU_TX-GPS_RX Pin=P4-4
+Added Room: Name=MainBoardSTM32

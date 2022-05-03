@@ -1,0 +1,68 @@
+Change Component Designator: OldDesignator=IC2 NewDesignator=IC3
+Change Component Designator: OldDesignator=IC3 NewDesignator=IC2
+Added Component: Designator=C5(CAP ALU SIZE B)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "470uF"; VariantName = "[No Variations]"
+Added Component: Designator=C6(CAP-SM-0805)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "680uF"; VariantName = "[No Variations]"
+Added Component: Designator=C7(CAP ALU SIZE B)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "220uF"; VariantName = "[No Variations]"
+Added Component: Designator=D3(DIOM5026X262N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://datasheet.lcsc.com/szlcsc/DIYI-Elec-Tech-SS54_C84165.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "2.62mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "DIYI Elec Tech"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SS54"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=L3(INDUCTOR 12.5x12.5)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "33uH"; VariantName = "[No Variations]"
+Added Component: Designator=R1(RES-SM-0805)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "1K"; VariantName = "[No Variations]"
+Added Component: Designator=R2(3296W-1)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "3296W-1-101LF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/3296w-1-101lf/bourns?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.bourns.com/pdfs/3296.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "3296W-1-101LF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "652-3296W-1-101LF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/3296W-1-101LF?qs=UcU9LKO1dwEefwKxVJG4Jw%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=12V Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=GND Pin=D3-2
+Added Pin To Net: NetName=12V Pin=IC3-1
+Added Pin To Net: NetName=GND Pin=IC3-3
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=NetC6_1 Pin=C6-1
+Added Pin To Net: NetName=NetC6_1 Pin=C7-1
+Added Pin To Net: NetName=NetC6_1 Pin=L3-1
+Added Pin To Net: NetName=NetC6_1 Pin=R2-3
+Added Net: Name=NetC6_1
+Added Pin To Net: NetName=NetC6_2 Pin=C6-2
+Added Pin To Net: NetName=NetC6_2 Pin=R1-1
+Added Pin To Net: NetName=NetC6_2 Pin=R2-2
+Added Net: Name=NetC6_2
+Added Pin To Net: NetName=NetD3_1 Pin=D3-1
+Added Pin To Net: NetName=NetD3_1 Pin=IC3-2
+Added Pin To Net: NetName=NetD3_1 Pin=L3-2
+Added Net: Name=NetD3_1
+Added Pin To Net: NetName=NetIC3_4 Pin=IC3-4
+Added Pin To Net: NetName=NetIC3_4 Pin=R1-2
+Added Net: Name=NetIC3_4
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component C5 Cin
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component C6 CFF
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component C7 Cout
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component D3 SS54
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component L3 Inductor
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component P7 NRF24L01
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component R1 RESISTOR SMD
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component R2 3296W-1-101LF
+Added Room: Name=MainBoardSTM32
