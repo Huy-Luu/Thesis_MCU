@@ -1,0 +1,28 @@
+Added Component: Designator=J1(MOLEX-DUALUSB)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/769e69235f305794a0165724e99951b5.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "67298-3090"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "538-67298-3090"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Molex/67298-3090?qs=x6EjVpvqMVOYHaae5plDDQ%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC5V Pin=J1-1
+Added Pin To Net: NetName=GND Pin=J1-4
+Added Pin To Net: NetName=VCC5V Pin=J1-5
+Added Pin To Net: NetName=GND Pin=J1-8
+Added Pin To Net: NetName=UU Pin=J1-2
+Added Pin To Net: NetName=UU Pin=J1-3
+Added Pin To Net: NetName=UU Pin=J1-6
+Added Pin To Net: NetName=UU Pin=J1-7
+Added Pin To Net: NetName=UU Pin=J1-9
+Added Pin To Net: NetName=UU Pin=J1-10
+Added Pin To Net: NetName=UU Pin=J1-11
+Added Pin To Net: NetName=UU Pin=J1-12
+Added Net: Name=UU
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component J1 Pi's power
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component P3 PI communication
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component P4 Encoder2
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component P6 QMC5883L
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component P8 NRF24L01
+Added Room: Name=MainBoardSTM32

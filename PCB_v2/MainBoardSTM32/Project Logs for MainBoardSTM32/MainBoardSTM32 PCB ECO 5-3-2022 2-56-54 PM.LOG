@@ -1,0 +1,62 @@
+Change Component Comment : Designator=P2 Old Comment=Encoders New Comment=Encoder1
+Added Component: Designator=P8(JP8)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P9(JP8)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=PA0 Pin=B1-25
+Added Pin To Net: NetName=PA0 Pin=P9-2
+Added Net: Name=PA0
+Added Pin To Net: NetName=PA4 Pin=B1-29
+Added Pin To Net: NetName=PA4 Pin=P9-3
+Added Net: Name=PA4
+Added Pin To Net: NetName=PA5 Pin=B1-30
+Added Pin To Net: NetName=PA5 Pin=P9-4
+Added Net: Name=PA5
+Added Pin To Net: NetName=PA10 Pin=B1-7
+Added Pin To Net: NetName=PA10 Pin=P8-2
+Added Net: Name=PA10
+Added Pin To Net: NetName=PA11 Pin=B1-8
+Added Pin To Net: NetName=PA11 Pin=P8-1
+Added Net: Name=PA11
+Added Pin To Net: NetName=PB0 Pin=B1-33
+Added Pin To Net: NetName=PB0 Pin=P9-5
+Added Net: Name=PB0
+Added Pin To Net: NetName=PB1 Pin=B1-34
+Added Pin To Net: NetName=PB1 Pin=P9-6
+Added Net: Name=PB1
+Added Pin To Net: NetName=PB10 Pin=B1-35
+Added Pin To Net: NetName=PB10 Pin=P9-7
+Added Net: Name=PB10
+Added Pin To Net: NetName=PB11 Pin=B1-36
+Added Pin To Net: NetName=PB11 Pin=P9-8
+Added Net: Name=PB11
+Added Pin To Net: NetName=PB12 Pin=B1-1
+Added Pin To Net: NetName=PB12 Pin=P8-6
+Added Net: Name=PB12
+Added Pin To Net: NetName=PB13 Pin=B1-2
+Added Pin To Net: NetName=PB13 Pin=P8-5
+Added Net: Name=PB13
+Added Pin To Net: NetName=PB14 Pin=B1-3
+Added Pin To Net: NetName=PB14 Pin=P8-4
+Added Net: Name=PB14
+Added Pin To Net: NetName=PB15 Pin=B1-4
+Added Pin To Net: NetName=PB15 Pin=P8-3
+Added Net: Name=PB15
+Added Pin To Net: NetName=PC13 Pin=B1-22
+Added Pin To Net: NetName=PC13 Pin=P8-7
+Added Net: Name=PC13
+Added Pin To Net: NetName=PC14 Pin=B1-23
+Added Pin To Net: NetName=PC14 Pin=P8-8
+Added Net: Name=PC14
+Added Pin To Net: NetName=PC15 Pin=B1-24
+Added Pin To Net: NetName=PC15 Pin=P9-1
+Added Net: Name=PC15
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component P8 SPARE 2
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component P9 SPARE 1
+Added Room: Name=MainBoardSTM32

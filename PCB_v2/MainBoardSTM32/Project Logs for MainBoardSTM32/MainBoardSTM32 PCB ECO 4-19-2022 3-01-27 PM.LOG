@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=VCC3V3 Pin=*1-1
+Removed Pin From Net: NetName=GND Pin=*1-2
+Removed Pin From Net: NetName=I2C1_SDA Pin=*1-4
+Removed Pin From Net: NetName=I2C1_SCL Pin=*1-5
+Removed Pin From Net: NetName=MCU_RX-PI_TX Pin=*1-6
+Removed Pin From Net: NetName=MCU_TX-PI_RX Pin=*1-7
+Removed Pin From Net: NetName=RPWM Pin=*1-15
+Removed Pin From Net: NetName=LPWM Pin=*1-16
+Removed Pin From Net: NetName=GND Pin=*1-21
+Removed Pin From Net: NetName=GND Pin=*1-22
+Removed Pin From Net: NetName=Encoder2 Pin=*1-29
+Removed Pin From Net: NetName=Encoder1 Pin=*1-30
+Removed Pin From Net: NetName=MCU_RX-GPS_TX Pin=*1-33
+Removed Pin From Net: NetName=MCU_TX-GPS_RX Pin=*1-34
+Removed Pin From Net: NetName=ServoPWM Pin=*1-35
+Removed Member From Class: ClassName=MainBoardSTM32 Member=*1
+Added Component: Designator=B1(Bluepill)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=LPWM Pin=B1-5
+Added Pin To Net: NetName=RPWM Pin=B1-6
+Added Pin To Net: NetName=MCU_TX-PI_RX Pin=B1-14
+Added Pin To Net: NetName=MCU_RX-PI_TX Pin=B1-15
+Added Pin To Net: NetName=I2C1_SCL Pin=B1-16
+Added Pin To Net: NetName=I2C1_SDA Pin=B1-17
+Added Pin To Net: NetName=GND Pin=B1-19
+Added Pin To Net: NetName=VCC3V3 Pin=B1-20
+Added Pin To Net: NetName=ServoPWM Pin=B1-26
+Added Pin To Net: NetName=MCU_TX-GPS_RX Pin=B1-27
+Added Pin To Net: NetName=MCU_RX-GPS_TX Pin=B1-28
+Added Pin To Net: NetName=Encoder1 Pin=B1-31
+Added Pin To Net: NetName=Encoder2 Pin=B1-32
+Added Pin To Net: NetName=GND Pin=B1-39
+Added Pin To Net: NetName=GND Pin=B1-40
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component B1 Bluepill
+Added Room: Name=MainBoardSTM32

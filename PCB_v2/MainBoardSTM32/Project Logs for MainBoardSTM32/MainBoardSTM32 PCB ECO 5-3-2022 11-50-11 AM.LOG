@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=RPWM Pin=P1-1
+Removed Pin From Net: NetName=LPWM Pin=P1-5
+Added Pin To Net: NetName=LPWM Pin=P1-1
+Added Pin To Net: NetName=RPWM Pin=P1-5
+Added Member To Class: ClassName=MainBoardSTM32 Member=Component P1 H bridge
+Added Room: Name=MainBoardSTM32
