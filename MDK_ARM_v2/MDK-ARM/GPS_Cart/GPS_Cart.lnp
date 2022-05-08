@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"gps_cart\startup_stm32f103xb.o"
+"gps_cart\main.o"
+"gps_cart\stm32f1xx_it.o"
+"gps_cart\stm32f1xx_hal_msp.o"
+"gps_cart\stm32f1xx_hal_gpio_ex.o"
+"gps_cart\stm32f1xx_hal_i2c.o"
+"gps_cart\stm32f1xx_hal.o"
+"gps_cart\stm32f1xx_hal_rcc.o"
+"gps_cart\stm32f1xx_hal_rcc_ex.o"
+"gps_cart\stm32f1xx_hal_gpio.o"
+"gps_cart\stm32f1xx_hal_dma.o"
+"gps_cart\stm32f1xx_hal_cortex.o"
+"gps_cart\stm32f1xx_hal_pwr.o"
+"gps_cart\stm32f1xx_hal_flash.o"
+"gps_cart\stm32f1xx_hal_flash_ex.o"
+"gps_cart\stm32f1xx_hal_exti.o"
+"gps_cart\stm32f1xx_hal_spi.o"
+"gps_cart\stm32f1xx_hal_tim.o"
+"gps_cart\stm32f1xx_hal_tim_ex.o"
+"gps_cart\stm32f1xx_hal_uart.o"
+"gps_cart\system_stm32f1xx.o"
+"gps_cart\functions.o"
+--library_type=microlib --strict --scatter "GPS_Cart\GPS_Cart.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GPS_Cart.map" -o GPS_Cart\GPS_Cart.axf
